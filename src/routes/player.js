@@ -15,7 +15,8 @@ const {
     searchENG_PlayerByName,
     searchESP_PlayerByName,
     searchGER_PlayerByName,
-    searchITA_PlayerByName
+    searchITA_PlayerByName,
+    searchFR_PlayerByName
 } = require('../controllers/searchbyLeague');
 
 const router = express.Router()
@@ -26,6 +27,7 @@ router.get("/players/search/eng", searchENG_PlayerByName);
 router.get("/players/search/esp", searchESP_PlayerByName);
 router.get("/players/search/ger", searchGER_PlayerByName);
 router.get("/players/search/ita", searchITA_PlayerByName);
+router.get("/players/search/fra", searchFR_PlayerByName);
 
 router.get("/england/rand", getRandomPlayersFromEngland);
 
